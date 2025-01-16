@@ -2,7 +2,7 @@ using System;
 
 public class Singleton
 {
-    private static Singleton Instance;
+    private static volatile Singleton Instance;
     private int data;
     private static readonly object padlock = new object();
 
